@@ -1,0 +1,23 @@
+.photo-grid {
+	display: grid;
+	gap: 1rem;
+
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+	/* Galeria com fotos quadradas */
+	grid-auto-rows: 240px;
+}
+
+/* Para funcionar em dispositivos menores que 600px de largura */
+@media screen and (min-width: 600px){
+
+	.card-tall {
+		/* START/END */
+		grid-row: span 2 / auto;
+	}
+	
+	.card-wide {
+		grid-column: span 2 / auto;
+	}
+
+}

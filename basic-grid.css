@@ -1,0 +1,16 @@
+.basic-grid {
+	display: grid;
+	gap: 1rem;
+
+	/* Metodo manual */
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; */
+	
+	/* Metodo com repetição automática */
+	/* grid-template-columns: repeat(12, 1fr); */
+	
+	/* Método com tamanho minimo e máximo */
+	/* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+	
+	/* Metodo com tamanho minimo e máximo e pula a linha */
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
